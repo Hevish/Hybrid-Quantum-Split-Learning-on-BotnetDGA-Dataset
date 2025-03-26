@@ -1,4 +1,4 @@
-# 🧠 HQSL: A Hybrid Quantum Neural Network for Split Learning
+# HQSL: A Hybrid Quantum Neural Network for Split Learning
 
 This repository demonstrates how **Hybrid Quantum Neural Networks** can be integrated with **Split Learning (SL)** — a framework we refer to as **HQSL**.
 
@@ -12,8 +12,8 @@ HQSL enables multiple **resource-constrained clients** to collaboratively train 
 
 ```
 .
-├── folder1/ to folder5/        # Experimental configurations or data splits
-├── results/                    # Output metrics, logs, or plots
+├── folder1/ to folder5/        # Experimental data splits as per k-fold x-val
+├── results/                    # Output logs
 ├── centralized_classical.py    # Centralized classical baseline
 ├── centralized_hybrid.py       # Centralized HQSL model (before splitting)
 ├── divideDataset.py            # Dataset preprocessing and splitting
@@ -27,12 +27,9 @@ HQSL enables multiple **resource-constrained clients** to collaboratively train 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 2. **Prepare the dataset**
    Make sure the dataset is accessible, then run:
@@ -50,7 +47,7 @@ HQSL enables multiple **resource-constrained clients** to collaboratively train 
 
 ---
 
-## 🧪 Models Explained
+## Models Explained
 
 | Script                    | Description                                        |
 |--------------------------|----------------------------------------------------|
