@@ -56,3 +56,24 @@ HQSL enables multiple **resource-constrained clients** to collaboratively train 
 | `split_N_hybrid.py`      | HQSL scaled to N clients                           |
 | `centralized_classical.py` | Centralized classical baseline                   |
 | `split_classical.py`     | Classical split learning (
+
+
+---
+
+
+## Results
+
+Results, plots, or model outputs will be saved in the `results/' folder.
+
+---
+
+## Motivation
+
+Botnet-based Domain Generation Algorithms (DGAs) are difficult to detect with traditional methods. HQSL offers a scalable, distributed, and quantum-enhanced approach to improve generalization and privacy in learning models for DGA detection.
+
+---
+## Notes
+
+This repo assumes familiarity with quantum machine learning, split learning, and botnet DGA detection.
+
+If you are running quantum components, make sure to configure a backend such as IBM Qiskit or Pennylane.
