@@ -1,13 +1,61 @@
-## HQSL: A Hybrid Quantum Neural Network for Split Learning
+# 🧠 HQSL: A Hybrid Quantum Neural Network for Split Learning
 
-This is an example (full code can be provided upon reasonable requests) of how we can combine Hybrid Quantum Neural Networks with Split Learning (HQSL)
+This repository demonstrates how **Hybrid Quantum Neural Networks** can be integrated with **Split Learning (SL)** — a framework we refer to as **HQSL**.
 
-HQSL allows scaling of multiple resource-constrained clients to train their ML models with a Hybrid Quantum Server
+HQSL enables multiple **resource-constrained clients** to collaboratively train a machine learning model by splitting the model between the clients and a powerful **Hybrid Quantum Server**. This approach is particularly suitable for privacy-preserving and distributed training scenarios like botnet domain detection.
 
-centralized_hybrid.py consists of HQSL prior to splitting it before the quantum layer
+> 📂 This is a code repository with working examples. Full datasets or additional experimental details can be provided upon reasonable request.
 
-split_hybrid.py consists of HQSL modelling and training. 
+---
 
-split_N_hybrid.py consists of HQSL scaled for N clients.
+## 📁 Repository Structure
 
-The baselines are the classical equivalents of the above.
+```
+.
+├── folder1/ to folder5/        # Experimental configurations or data splits
+├── results/                    # Output metrics, logs, or plots
+├── centralized_classical.py    # Centralized classical baseline
+├── centralized_hybrid.py       # Centralized HQSL model (before splitting)
+├── divideDataset.py            # Dataset preprocessing and splitting
+├── hybrid_split_v3.zip         # Legacy or backup hybrid models/configs
+├── split_classical.py          # Basic classical split learning
+├── split_hybrid.py             # Basic HQSL (2-client setup)
+├── split_N_classical.py        # N-client classical split learning
+├── split_N_hybrid.py           # N-client HQSL implementation
+└── README.md                   # You're here!
+```
+
+---
+
+## 🚀 Getting Started
+
+1. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Prepare the dataset**
+   Make sure the dataset is accessible, then run:
+   ```bash
+   python divideDataset.py
+   ```
+
+3. **Run a model**
+   Choose from the centralized or split versions:
+   ```bash
+   python centralized_hybrid.py        # HQSL model without split
+   python split_hybrid.py              # HQSL with 2 clients
+   python split_N_hybrid.py            # HQSL with N clients
+   ```
+
+---
+
+## 🧪 Models Explained
+
+| Script                    | Description                                        |
+|--------------------------|----------------------------------------------------|
+| `centralized_hybrid.py`  | HQSL model before splitting; all components together |
+| `split_hybrid.py`        | HQSL across two devices: client + quantum server   |
+| `split_N_hybrid.py`      | HQSL scaled to N clients                           |
+| `centralized_classical.py` | Centralized classical baseline                   |
+| `split_classical.py`     | Classical split learning (
