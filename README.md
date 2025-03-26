@@ -55,7 +55,7 @@ HQSL enables multiple **resource-constrained clients** to collaboratively train 
 | `split_hybrid.py`        | HQSL across two devices: client + quantum server   |
 | `split_N_hybrid.py`      | HQSL scaled to N clients                           |
 | `centralized_classical.py` | Centralized classical baseline                   |
-| `split_classical.py`     | Classical split learning (
+| `split_classical.py`     | Classical split learning                           |
 
 
 ---
