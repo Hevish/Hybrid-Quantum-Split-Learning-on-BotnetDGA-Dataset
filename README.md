@@ -63,7 +63,7 @@ HQSL enables multiple **resource-constrained clients** to collaboratively train 
 
 ## Results
 
-Results, plots, or model outputs will be saved in the `results/' folder.
+Results, plots, or model outputs will be saved in the ```results/``` folder. For full results, see original paper. 
 
 ---
 
