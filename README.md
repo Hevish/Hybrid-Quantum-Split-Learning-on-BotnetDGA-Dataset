@@ -69,7 +69,7 @@ Results, plots, or model outputs will be saved in the ```results/``` folder. For
 
 ## Motivation
 
-Botnet-based Domain Generation Algorithms (DGAs) are difficult to detect with traditional methods. HQSL offers a scalable, distributed, and quantum-enhanced approach to improve generalization and privacy in learning models for DGA detection.
+Botnet-based Domain Generation Algorithms (DGAs) can be difficult to detect with traditional methods. HQSL offers a scalable, distributed, and quantum-enhanced approach to improve generalization and privacy in learning models for DGA detection.
 
 ---
 ## Notes
